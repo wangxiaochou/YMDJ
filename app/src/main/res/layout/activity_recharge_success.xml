@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_twenty"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_pay_success_state_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_ten"
+        android:text="@string/recharge_success_recharge_success"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_huge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_four"
+        android:text="@string/recharge_success_go"
+        android:textColor="@color/preference_price"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/tv_activity_recharge_success_state_back"
+        style="@style/BtnThemeColorSolidBackground"
+        android:layout_marginLeft="@dimen/dimen_twelve"
+        android:layout_marginRight="@dimen/dimen_twelve"
+        android:layout_marginTop="@dimen/dimen_thirty"
+        android:gravity="center"
+        android:text="@string/recharge_success_go_home" />
+</LinearLayout>

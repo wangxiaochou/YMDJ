@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_class_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_zero"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_fragment_class_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_fragment_class_random_sort"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="综合排序"-->
+                    <!--android:textColor="@color/color_theme"-->
+                    <!--android:textSize="@dimen/font_small"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_fragment_class_sale_sort"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="销量排序"-->
+                    <!--android:textColor="@color/top_bar_title_color"-->
+                    <!--android:textSize="@dimen/font_small"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_fragment_class_price_sort"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingTop="15dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="价格排序"-->
+                        <!--android:textColor="@color/top_bar_title_color"-->
+                        <!--android:textSize="@dimen/font_small"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="3dp"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="6dp"-->
+                            <!--android:layout_height="6dp"-->
+                            <!--android:src="@drawable/icon_class_order_unup"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="6dp"-->
+                            <!--android:layout_height="6dp"-->
+                            <!--android:src="@drawable/icon_class_order_undown"/>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/rl_fragment_class_top"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/rl_fragment_class_count"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</LinearLayout>
+

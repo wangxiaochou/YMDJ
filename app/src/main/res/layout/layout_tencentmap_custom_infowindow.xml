@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_theme_color_rectangle_stoke_small_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_layout_tencent_map_cust_infowindow_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="瑶海家园店"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal"/>
+
+        <TextView
+            android:id="@+id/tv_layout_tencent_map_cust_infowindow_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="discribe"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_layout_tencent_map_cust_infowindow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_choose_store_details"/>
+</LinearLayout>

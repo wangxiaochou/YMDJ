@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_activity_manage_address_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:paddingBottom="@dimen/album_dp_15"
+            android:paddingTop="@dimen/album_dp_15"
+            android:text="@string/manage_address_add"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_huge" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_manage_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_activity_manage_address_add_address"
+            android:background="@color/color_background" />
+    </RelativeLayout>
+
+</LinearLayout>

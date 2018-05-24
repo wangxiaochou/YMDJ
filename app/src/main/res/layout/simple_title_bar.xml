@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rellay_simple_title_bar_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/simple_title_bar_default_height"
+                android:background="@android:color/darker_gray">
+
+    <FrameLayout
+        android:id="@+id/fralay_simple_title_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/simple_title_bar_left_padding"
+        android:paddingRight="@dimen/simple_title_bar_inner_padding">
+
+        <TextView
+            android:id="@+id/tv_simple_title_bar_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:drawablePadding="@dimen/simple_title_bar_drawable_padding"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fralay_simple_title_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/simple_title_bar_inner_padding"
+        android:paddingRight="@dimen/simple_title_bar_right_padding">
+
+        <TextView
+            android:id="@+id/tv_simple_title_bar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:drawablePadding="@dimen/simple_title_bar_drawable_padding"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fralay_simple_title_bar_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_simple_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="@dimen/font_huge"/>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/v_simple_title_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/simple_title_bar_shadow_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/simple_title_bar_def_shadow"/>
+
+</RelativeLayout>

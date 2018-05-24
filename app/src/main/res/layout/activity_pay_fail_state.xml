@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.PaySuccessStateActivity">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <ImageView
+        android:id="@+id/iv_activity_pay_success_state"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_pay_success_state_fail" />
+
+    <TextView
+        android:id="@+id/tv_activity_pay_cancel_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/pay_fail_pay_fail"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_huge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_activity_pay_cancel_state_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:text="@string/pay_fail_tips"
+        android:textColor="@color/top_bar_title_color"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/tv_activity_pay_other_way_back"
+        style="@style/BtnThemeColorSolidBackground"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/pay_fail_other_way_pay" />
+
+    <TextView
+        android:id="@+id/tv_activity_pay_cancel_state_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_white_color_rectangle_stoke_small_bg"
+        android:gravity="center"
+        android:text="@string/pay_fail_cancel"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_large" />
+
+    <ImageView
+        android:id="@+id/iv_activity_pay_cancel_state_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_sixteen"
+    android:background="@color/color_white">
+
+
+    <TextView
+        android:id="@+id/tv_item_choose_store_store_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/cb_item_choose_store_store_selected"
+        android:text="大学城店"
+        android:textColor="@color/top_bar_title_color"
+        android:textSize="@dimen/font_large"/>
+
+    <TextView
+        android:id="@+id/tv_item_choose_store_store_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_choose_store_store_title"
+        android:layout_marginTop="@dimen/dimen_six"
+        android:layout_toLeftOf="@+id/cb_item_choose_store_store_selected"
+        android:text="距离您约1.0千米"
+        android:textColor="@color/color_gray_login_hint_text"
+        android:textSize="@dimen/font_small"/>
+
+    <CheckBox
+        android:visibility="visible"
+        android:id="@+id/cb_item_choose_store_store_selected"
+        android:layout_width="@dimen/dimen_twenty_two"
+        android:layout_height="@dimen/dimen_twenty_two"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_twelve"
+        android:background="@drawable/select_coupon_checked_bg"
+        android:button="@null"/>
+</RelativeLayout>

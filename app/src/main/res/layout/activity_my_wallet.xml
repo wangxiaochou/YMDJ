@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/album_dp_15"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_activity_wallet_recharge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/album_dp_4"
+            android:drawableTop="@drawable/icon_recharge"
+            android:gravity="center"
+            android:text="@string/my_wallet_recharge"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_activity_wallet_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/album_dp_4"
+            android:drawableTop="@drawable/icon_wallet"
+            android:gravity="center"
+            android:text="@string/my_wallet_total_amount"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_activity_wallet_safety"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/album_dp_4"
+            android:drawableTop="@drawable/icon_wallet_safety"
+            android:gravity="center"
+            android:text="@string/my_wallet_safety"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_wallet_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/album_dp_15"
+        android:paddingTop="@dimen/album_dp_4"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_normal"
+        android:textStyle="bold"
+        tools:text="￥0.00" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_large"
+        android:paddingLeft="@dimen/dimen_fifteen"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/my_wallet_history"
+        android:textColor="@color/album_FontHint"
+        android:textSize="@dimen/font_small" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/sr_activity_wallet_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_activity_wallet_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

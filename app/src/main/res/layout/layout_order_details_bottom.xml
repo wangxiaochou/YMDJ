@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_twelve">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="商品金额"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_layout_order_details_bottom_goods_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="¥0.00"
+            android:textColor="@color/top_bar_title_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_line"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:padding="@dimen/dimen_twelve">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="优惠券"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_layout_order_details_bottom_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="-0.00"
+            android:textColor="@color/top_bar_title_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_line"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="@dimen/dimen_twelve">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="购物袋"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_layout_order_details_bottom_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+0.00"
+            android:textColor="@color/top_bar_title_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/dimen_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_twelve">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="总费用"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/tv_layout_order_details_bottom_all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="¥0.00"
+            android:textColor="@color/color_order_details_money_text"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_seventy"
+        android:background="@color/color_background" />
+
+</LinearLayout>

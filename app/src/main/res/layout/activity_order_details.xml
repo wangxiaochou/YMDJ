@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:id="@+id/bar_activity_order_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/simple_title_bar" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_activity_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_activity_order_details_title" />
+
+
+    <RelativeLayout
+        android:background="@color/color_background"
+        android:id="@+id/rl_activity_order_details_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_activity_order_details_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_theme"
+            android:text="提交订单"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_large"
+            android:visibility="visible" />
+        <!--收货取货-->
+        <RelativeLayout
+            android:id="@+id/rl_activity_order_details_goods_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_activity_order_details_put"
+                android:layout_width="@dimen/dimen_hundred"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/color_theme"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_large"
+                tools:text="收货" />
+
+            <Button
+                android:id="@+id/btn_activity_order_details_delivery"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/dimen_sixty_six"
+                android:layout_height="@dimen/dimen_twenty_eight"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_sixteen"
+                android:layout_toLeftOf="@+id/btn_activity_order_details_put"
+                android:background="@drawable/shape_order_btn"
+                android:text="申请配送"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_activity_order_details_retreat"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/dimen_sixty_six"
+                android:layout_height="@dimen/dimen_twenty_eight"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_sixteen"
+                android:layout_toLeftOf="@+id/btn_activity_order_details_delivery"
+                android:background="@drawable/shape_order_btn"
+                android:text="申请退款"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_order_details_delete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_twelve"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_activity_order_details_delete"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/dimen_sixty_six"
+                android:layout_height="@dimen/dimen_twenty_eight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_sixteen"
+                android:background="@drawable/shape_order_btn"
+                android:text="删除订单"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_activity_order_details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="实际取货时间:17-12-12 14:23:12"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_normal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

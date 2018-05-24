@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.SettingActivity">
+
+    <include layout="@layout/simple_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="清除缓存"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <TextView
+            android:id="@+id/tv_activity_setting_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_activity_setting_clear"
+            tools:text="25.0M"
+            android:textColor="@color/color_gray_login_hint_text"
+            android:textSize="@dimen/font_large"/>
+
+        <ImageView
+            android:id="@+id/iv_activity_setting_clear"
+            style="@style/IndicateRightStyle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_modify_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_twelve"
+        android:background="@color/color_white"
+        android:padding="@dimen/font_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <ImageView
+            style="@style/IndicateRightStyle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_activity_setting_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="版本更新"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <TextView
+            android:id="@+id/tv_activity_setting_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tv_activity_setting_update"
+            android:text="V2.3.0"
+            android:textColor="@color/color_gray_login_hint_text"
+            android:textSize="@dimen/font_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="检查更新"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <ImageView
+            style="@style/IndicateRightStyle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_contract_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系客服"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <ImageView
+            style="@style/IndicateRightStyle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_setting_bind_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="绑定微信"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large"/>
+
+        <ImageView
+            style="@style/IndicateRightStyle"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_setting_exit"
+        style="@style/BtnThemeColorSolidBackground"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="退出登录"/>
+</LinearLayout>

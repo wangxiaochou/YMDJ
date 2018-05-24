@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/iv_item_order_details_rv_goods"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/dimen_hundred_ten"
+            android:layout_height="@dimen/dimen_hundred_ten"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardCornerRadius="@dimen/dimen_sixteen"
+            card_view:cardElevation="@dimen/dimen_two"
+            card_view:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/iv_item_order_details_goods_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    tools:src="@mipmap/ic_launcher"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_item_order_details_rv_goods">
+
+            <TextView
+                android:id="@+id/tv_item_order_details_rv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_large"
+                android:maxLines="2"
+                tools:text="飞机打款发货的卡拉很疯狂飞机打款发货的卡拉很疯狂的的"/>
+            <LinearLayout
+                android:id="@+id/ll_item_order_details_rv_goods_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv_item_order_details_rv_goods_name">
+
+                <TextView
+                    android:id="@+id/tv_item_order_details_rv_goods_new"
+                    android:layout_width="@dimen/dimen_zero"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="¥15.00元/份"/>
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/tv_item_order_details_rv_goods_old"
+                    android:layout_width="@dimen/dimen_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_small"
+                    tools:text="¥15.00元/份 "/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_item_order_details_rv_goods_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_item_order_details_rv_goods_price"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal"
+                tools:text="数量：5件"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_item_order_details_rv_apply_service"
+                android:layout_width="70dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ll_item_order_details_rv_goods_price"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_gray_rectangle_stoke_bg"
+                android:gravity="center"
+                android:textColor="@color/top_bar_text_color"
+                android:textSize="@dimen/font_normal"
+                tools:text="申请售后"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

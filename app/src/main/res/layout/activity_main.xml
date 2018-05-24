@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_zero"
+        android:layout_weight="1"
+        android:id="@+id/fl_main_container"
+        />
+    <View
+        style="@style/DividerHorizontal"
+        />
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+        <com.ypshengxian.daojia.view.BadgeRadioButton
+            android:id="@+id/rb_main_0"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_icon_home"
+            android:text="@string/main_tab_one_text"
+            android:checked="true"
+            android:textColor="@color/main_selector_text_color"
+            android:textSize="@dimen/font_tiny"
+            android:drawablePadding="2dp" />
+        <com.ypshengxian.daojia.view.BadgeRadioButton
+            android:id="@+id/rb_main_1"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_tab_two_text"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_icon_class"
+            android:textColor="@color/main_selector_text_color"
+            android:textSize="@dimen/font_tiny"
+            android:drawablePadding="2dp" />
+        <com.ypshengxian.daojia.view.BadgeRadioButton
+            android:id="@+id/rb_main_2"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_icon_cart"
+            android:text="@string/main_tab_three_text"
+            android:checked="false"
+            android:textColor="@color/main_selector_text_color"
+            android:textSize="@dimen/font_tiny"
+            android:drawablePadding="2dp" />
+        <com.ypshengxian.daojia.view.BadgeRadioButton
+            android:id="@+id/rb_main_3"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_icon_extract"
+            android:text="@string/main_tab_four_text"
+            android:checked="false"
+            android:textColor="@color/main_selector_text_color"
+            android:textSize="@dimen/font_tiny"
+            android:drawablePadding="2dp" />
+        <com.ypshengxian.daojia.view.BadgeRadioButton
+            android:id="@+id/rb_main_4"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_icon_mine"
+            android:text="@string/main_tab_five_text"
+            android:checked="false"
+            android:textColor="@color/main_selector_text_color"
+            android:textSize="@dimen/font_tiny"
+            android:drawablePadding="2dp" />
+    </RadioGroup>
+
+
+</LinearLayout>

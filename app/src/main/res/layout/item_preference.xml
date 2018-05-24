@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_ten">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/dimen_hundred"
+            android:layout_height="@dimen/dimen_hundred"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_img_line"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardCornerRadius="@dimen/dimen_eight"
+            card_view:cardElevation="@dimen/dimen_zero"
+            card_view:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_preference_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    tools:src="@mipmap/ic_launcher" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_preference_limit"
+                    android:background="@color/preference_limit"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/font_small"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/color_white"
+                    tools:text="20:12:1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_ten"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_preference_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                tools:text="hdasdkjashfjhasfhashjfajkfhahshkhadbkja"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_four"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时价:"
+                    android:textColor="@color/preference_price"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tv_preference_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="29.90/斤"
+                    android:textColor="@color/preference_money"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tv_preference_big_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    tools:text="市场价:67.90斤"
+                    android:textColor="@color/preference_price"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_zero"
+                android:layout_marginTop="@dimen/dimen_two"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_preference_folder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_preference_folder"
+                            tools:text="4折"
+                            android:textColor="@color/preference_count"
+                            android:textSize="@dimen/font_tiny" />
+
+                        <TextView
+                            android:id="@+id/tv_preference_purchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimen_four"
+                            tools:text="限购1分"
+                            android:textColor="@color/preference_price"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+
+                    <com.ypshengxian.daojia.view.banner.MyProgressBar
+                        android:id="@+id/mp_preference_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_four" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_preference_rob"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/dimen_seventy"
+                    android:layout_height="@dimen/dimen_twenty_eight"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_eight"
+                    android:background="@drawable/shape_preference_rob"
+                    android:text="马上抢"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_small" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

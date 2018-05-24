@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/dimen_six"/>
+    <solid android:color="@color/pop_left_btn_color"/>
+</shape>

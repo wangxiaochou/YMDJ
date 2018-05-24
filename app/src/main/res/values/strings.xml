@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">谊品到家</string>
+    <string name="toast_network_timeout">网络超时</string>
+
+    <!-- Web View Toolbar -->
+    <string name="web_view_left_toolbar_back">返回</string>
+    <string name="web_view_left_toolbar_close">关闭</string>
+    <string name="web_view_error_text">噢，出现错误了</string>
+    <string name="web_view_error_reason">(DNS_PROBE_ERROR)</string>
+    <string name="web_view_error_retry">重试</string>
+    <string name="web_view_open_file">选择文件</string>
+
+
+    <!--主页-->
+    <string name="main_tab_one_text">首页</string>
+    <string name="main_tab_two_text">分类</string>
+    <string name="main_tab_three_text">购物车</string>
+    <string name="main_tab_four_text">提货</string>
+    <string name="main_tab_five_text">我的</string>
+    <string name="main_title_default_text">谊品生鲜</string>
+    <string name="home_location_success">定位成功</string>
+    <string name="home_location_msg">当前距离您最近的门店为:&#160;&#160;%1$s是否确定?</string>
+
+
+    <!-- 页面状态 -->
+    <string name="page_status_retry">刷新试试</string>
+    <string name="page_status_load_fail">网络错误,请重新加载</string>
+    <string name="page_status_timeout">网络遨游太空去了，快去查看一下吧</string>
+    <string name="page_status_network_error">网络错误</string>
+    <string name="page_status_empty">空空如也，事实证明你很低调</string>
+    <string name="page_status_deleted">此处内容已删除，看看别地儿去吧</string>
+    <string name="page_status_not_available">暂未开通，我们正在努力挖掘中</string>
+
+    <!--我的-->
+    <string name="mine_tab_five_text">售后</string>
+    <string name="mine_tab_one_text">待付款</string>
+    <string name="mine_tab_two_text">待自提</string>
+    <string name="mine_tab_three_text">待收货</string>
+    <string name="mine_tab_four_text">已完成</string>
+    <string name="mine_point">0</string>
+    <string name="mine_money_default">¥0.00</string>
+    <string name="mine_money">¥%1$.2f</string>
+
+
+    <!--更新-->
+    <string name="update_progress_text">%1$d%2$s</string>
+
+    <!--登录-->
+    <string name="login_hint_phone_text">请输入手机号</string>
+    <string name="login_hint_pw_text">请输入密码</string>
+    <string name="login_register_text">注册</string>
+    <string name="login_forget_pw_text">忘记密码？</string>
+    <string name="login_string_login_text">登录</string>
+    <string name="login_others_login_text">第三方登录</string>
+    <string name="login_wx_login_text">微信</string>
+
+    <!--注册/找回密码-->
+    <string name="register_hint_code_text">请输入验证码</string>
+    <string name="register_get_code_text">获取验证码</string>
+    <string name="register_hint_input_pw_text">请输入密码</string>
+    <string name="register_hint_confirm_pw_text">确认密码</string>
+    <string name="register_hint_confirm_text">确定</string>
+    <string name="register_title_text_register">注册</string>
+    <string name="register_title_text_forget_password">找回密码</string>
+
+    <!--订单详情-->
+    <string name="order_details_pick_up_text">取货</string>
+    <string name="order_details_refund_text">申请退款</string>
+    <string name="order_details_distribution_text">申请配送</string>
+    <string name="order_details_title_text">订单详情</string>
+
+    <!--创建订单-->
+    <string name="pay_order_num">数量:&#160;&#160;&#160;&#160;%1$s件</string>
+    <string name="pay_order_money">%1$s购物袋¥%2$s元</string>
+    <string name="pay_order_pass">%1$s购物袋</string>
+    <string name="pay_bag_money">+%1$s</string>
+    <string name="pay_bag_money_two">+%1$.2f</string>
+    <string name="pay_pass_money">-%1$s</string>
+
+    <string name="pay_order_name">【%1$s】</string>
+    <string name="pay_order_phone">联系电话:&#160;&#160;%1$s</string>
+    <string name="pay_order_sn">订单编号:&#160;&#160;%1$s</string>
+    <string name="pay_order_time">订单生成时间:&#160;&#160;%1$s</string>
+
+    <!--申请售后-->
+    <string name="apply_after_sales_item_text">上传凭证\n(最多6张)</string>
+
+    <!--关于我们-->
+    <string name="about_us_title_text">关于我们</string>
+    <string name="about_us_text">&#160;&#160;&#160;&#160;&#160;&#160;&#160;谊品生鲜服务于广大新老顾客，开启零售生鲜新\n纪元，打造线上线下为一体的综合服务平台。</string>
+
+    <!--商品详情-->
+    <string name="goods_details_title_text">商品详情</string>
+
+    <!--领券中心-->
+    <string name="receive_coupons_title_text">领券中心</string>
+
+    <!--我的优惠券-->
+    <string name="my_coupon_title_text">优惠券</string>
+
+    <!--选择优惠券-->
+    <string name="chioce_coupon_title_text">选择优惠券</string>
+
+    <!--选择门店-->
+    <string name="choose_store_title_text">选择门店</string>
+    <string name="choose_distance_text">距离您约%1$.2f米</string>
+
+    <!--个人资料-->
+    <string name="user_data_title_text">个人资料</string>
+
+    <!--钱包安全-->
+    <string name="purse_safety_title_text">钱包安全</string>
+
+    <!--设置支付密码 -->
+    <string name="set_payment_password_title_text">设置支付密码</string>
+
+    <!--设置-->
+    <string name="setting_title_text">设置</string>
+    <string name="setting_call_phone">023-8985478</string>
+
+    <!--搜索-->
+    <string name="search_title_text">取消</string>
+
+    <!--售后申请-->
+    <string name="apply_after_sales_title_text">售后申请</string>
+
+    <!--系统消息-->
+    <string name="system_message_title_text">系统消息</string>
+
+    <!--选择小区-->
+    <string name="choose_housing_title_text">选择小区</string>
+
+    <!--支付成功-->
+    <string name="pay_success_state_title_text">支付成功</string>
+
+    <!--专题活动-->
+    <string name="special_party_title_text">专题活动</string>
+
+    <!--加载中-->
+    <string name="loading_text">加载中....</string>
+
+    <!--购物车界面-->
+    <string name="cart_title">购物车</string>
+    <string name="cart_now_money">¥%1$s元/份</string>
+
+    <string name="msg_no">您还没有消息哦~</string>
+    <!--限时特惠-->
+    <string name="limit_rob">已抢%1$s件</string>
+    <string name="limit_progress">%1$s</string>
+    <string name="limit_num">限购%1$s份</string>
+    <!--全部订单-->
+    <string name="order_all_number">订单编号:&#160;&#160;%1$s</string>
+    <string name="order_all_money">总价:&#160;&#160;%1$.2f</string>
+    <string name="order_all_good">共%1$s件商品</string>
+
+    <!--支付失败-->
+    <string name="pay_fail_pay_fail">购买失败</string>
+    <string name="pay_fail_tips">你的余额可能不足，试试其他支付方式支付！</string>
+    <string name="pay_fail_other_way_pay">其他支付方式支付</string>
+    <string name="pay_fail_cancel">取消</string>
+
+    <!--支付完成-->
+    <string name="pay_success_text">温馨提示</string>
+    <string name="pay_success_count">*请您:\n前往指定地点取货(不支持提前取货)</string>
+
+    <!--支付页面-->
+    <string name="pay_way_title_text">支付页面</string>
+
+    <string name="pay_way_order_no">订单编号：</string>
+    <string name="pay_way_goods_name">商品名称：</string>
+    <string name="pay_way_pay_way">支付方式</string>
+    <string name="pay_way_balance_pay">余额支付</string>
+    <string name="pay_way_wx_pay">微信支付</string>
+    <string name="pay_way_alipay_pay">支付宝支付</string>
+
+    <!--我的钱包页面-->
+    <string name="my_wallet_title_text">我的钱包</string>
+    <string name="my_wallet_recharge">充值</string>
+    <string name="my_wallet_total_amount">总金额</string>
+    <string name="my_wallet_safety">钱包安全</string>
+    <string name="my_wallet_history">变动历史</string>
+    <string name="my_wallet_item_minus">-&#160;%1$.2f元</string>
+    <string name="my_wallet_item_add">+&#160;%1$.2f元</string>
+
+    <!--积分详情页面-->
+    <string name="integral_detail_title_text">积分详情</string>
+    <string name="integral_detail_exchange_goods">兑换商品</string>
+    <string name="integral_detail_total_integral">总积分</string>
+    <string name="integral_detail_exchange_balance">兑换余额</string>
+    <string name="integral_detail_history">积分流水</string>
+
+
+    <!--账户余额兑换页面-->
+    <string name="integral_exchange_title_text">账户余额兑换</string>
+    <string name="integral_exchange_integral_exchange_amount">兑换金额</string>
+    <string name="integral_exchange_input">请输入兑换金额</string>
+    <string name="integral_exchange_need_integral">所需积分：</string>
+    <string name="integral_exchange_confirm">确定</string>
+    <string name="integral_exchange_description">兑换说明</string>
+    <string name="integral_exchange_description_one">一、积分兑换余额只能在本平台使用，不能提现，不能撤出。</string>
+    <string name="integral_exchange_description_two">二、兑换规则为：1元余额消耗1000积分，不满一元的四舍五入。</string>
+    <string name="integral_exchange_description_three">三、最终解释权归谊品生鲜所有，如有疑问，请联系客服。</string>
+
+
+    <!--管理收货地址页面-->
+    <string name="manage_address_title_text">管理收货地址</string>
+    <string name="manage_address_add">新增收货地址</string>
+
+    <!--新增收货地址页面-->
+    <string name="add_address_title_text">新增收货地址</string>
+    <string name="add_address_save">保存</string>
+    <string name="add_address_tips">目前谊品只支持门店附近小区配送上门服务，如给您带来不便还请谅解！</string>
+    <string name="add_address_receiver">收货人</string>
+    <string name="add_address_name_input">输入姓名</string>
+    <string name="add_address_phone">联系电话</string>
+    <string name="add_address_phone_input">输入手机号</string>
+    <string name="add_address_address">地址</string>
+    <string name="add_address_store">门店</string>
+    <string name="add_address_housing_choose">选择小区</string>
+    <string name="add_address_choose">请选择</string>
+    <string name="add_address_address_detail">详细地址</string>
+    <string name="add_address_example">如：1栋18-7号</string>
+
+    <!--充值成功页面-->
+    <string name="recharge_success_title_text">充值成功</string>
+    <string name="recharge_success_recharge_success">充值成功</string>
+    <string name="recharge_success_go">赶快去首页逛逛吧！</string>
+    <string name="recharge_success_go_home">返回首页</string>
+
+    <!--取单订单详情-->
+    <string name="get_goods_order_detail_actual_amount">实际金额</string>
+    <string name="get_goods_order_detail_buy_amount">购买金额</string>
+    <string name="get_goods_order_detail_actual_weight">实际重量</string>
+    <string name="get_goods_order_detail_buy_weight">购买重量</string>
+    <string name="get_goods_order_detail_title_example">新鲜蓝莓进口 6个装 单果重30克 新鲜</string>
+
+    <!--绑定手机-->
+    <string name="binding_phone_title_text">绑定手机</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--首页替换符-->
+    <string name="main_text_new_price">¥%1$s/%2$s</string>
+    <string name="class_text_num">%1$s份</string>
+    <string name="class_text_folder">%1$s折</string>
+    <string name="class_text_old">市场价:%1$s/%2$s</string>
+    <string name="cart_text_old">折合%1$s元/斤</string>
+    <string name="cart_text_new_price">¥%1$s元/%2$s</string>
+    <string name="cart_all_money">¥%1$.2f</string>
+    <string name="pay_all_money">%1$.2f</string>
+    <!--新人专享折扣-->
+    <string name="shop_details_folder">%1$.1f折</string>
+
+    <!--取单订单明细-->
+    <string name="get_goods_order_detail">订单明细</string>
+
+    <!--取单订单详情-->
+    <string name="get_goods_order_info">订单详情</string>
+    <string name="get_goods_order_info_address">自提地址</string>
+    <string name="get_goods_order_info_address_example">重庆市渝北区红锦大道1号某某小区店</string>
+    <string name="get_goods_order_info_phone">联系电话</string>
+    <string name="get_goods_order_info_status_waiting">待取货</string>
+    <string name="get_goods_order_info_order_no">订单编号：</string>
+    <string name="get_goods_order_info_order_date">订单生成时间：</string>
+    <string name="get_goods_order_info_bag">购物袋</string>
+    <string name="get_goods_order_info_big_bag">大号购物袋</string>
+    <string name="get_goods_order_info_coupon">优惠券</string>
+    <string name="get_goods_order_info_used">已用</string>
+    <string name="get_goods_order_info_yuan_coupon">元优惠劵</string>
+    <string name="get_goods_order_info_send_date">送货日期</string>
+    <string name="get_goods_order_info_send_time">送货时间</string>
+    <string name="get_goods_order_info_tips">生鲜商品只能替用户保存2天，逾时不取将视为自动放弃订单而丢弃商品。</string>
+    <string name="get_goods_order_info_amount">商品金额</string>
+    <string name="get_goods_order_info_total_amount">总费用</string>
+    <string name="get_goods_order_info_minus">找零(已返还至账户余额)</string>
+    <string name="get_goods_order_info_actual_amount">实付金额</string>
+    <string name="get_goods_order_info_look_detail">查看明细</string>
+    <string name="get_goods_order_info_store_name">【谊品生鲜大学城店】</string>
+    <string name="get_goods_order_info_store_phone">0551-6666666</string>
+    <string name="price_zero">0.00</string>
+    <string name="price_minus">-%1$s</string>
+    <string name="price_add">+%1$s</string>
+    <string name="price_float">¥%1$.2f</string>
+
+    <!--提示消息-->
+    <string name="msg_cart_empty">您的购物车空空如也~</string>
+    <string name="msg_order_empty">暂无订单列表~</string>
+    <string name="msg_claim_goods_empty">暂无取货码~</string>
+    <string name="msg_search_empty">您还没有搜索记录哦~</string>
+    <string name="text_go_home">去首页</string>
+    <string name="msg_category_empty">此类商品已被抢光~</string>
+    <string name="msg_shop_empty">此类商品暂无数据~</string>
+
+    <!--门店详情-->
+    <string name="store_details_title">门店详情</string>
+    <string name="store_details_map">地图</string>
+    <string name="store_details_navigation">导航</string>
+    <string name="store_details_contact">联系</string>
+    <string name="store_details_sweet_alert">温馨提示：</string>
+    <string name="store_details_tips">为了保证商品新鲜以及给广大客户提供更好的服务，请按约定时间取货！</string>
+    <string name="store_details_time">营业时间：%1$s</string>
+    <string name="store_details_distance">距离您约%1$.1f千米</string>
+
+</resources>

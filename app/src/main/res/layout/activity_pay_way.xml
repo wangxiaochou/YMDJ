@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.PayWayActivity">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_hundred_ten"
+        android:paddingLeft="@dimen/dimen_twelve"
+        android:paddingRight="@dimen/dimen_twelve">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/iv_activity_pay_way"
+            android:layout_width="@dimen/dimen_forty_four"
+            android:layout_height="@dimen/dimen_forty_four"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_twelve"
+            android:src="@drawable/icon_pay_way_money" />
+
+        <TextView
+            android:id="@+id/tv_activity_pay_way_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_activity_pay_way_order"
+            android:layout_toRightOf="@id/iv_activity_pay_way"
+            android:gravity="center"
+            tools:text="¥ 15.00"
+            android:textColor="@color/color_theme"
+            android:textSize="@dimen/font_huge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_activity_pay_way_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_six"
+            android:layout_marginTop="@dimen/dimen_six"
+            android:layout_toRightOf="@id/iv_activity_pay_way"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_order_no"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/tv_activity_pay_way_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_activity_pay_way_order"
+            android:layout_toRightOf="@id/iv_activity_pay_way"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_goods_name"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/tv_activity_pay_way_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_line"
+        android:background="@color/color_page_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_twelve"
+        android:text="@string/pay_way_pay_way"
+        android:textColor="@color/top_bar_text_color"
+        android:textSize="@dimen/font_small" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_activity_pay_way_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="@dimen/dimen_twelve">
+
+        <ImageView
+            android:id="@+id/iv_activity_pay_way_balance"
+            android:layout_width="@dimen/dimen_forty"
+            android:layout_height="@dimen/dimen_forty"
+            android:src="@drawable/icon_pay_way_balance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_sixteen"
+            android:layout_toRightOf="@id/iv_activity_pay_way_balance"
+            android:text="@string/pay_way_balance_pay"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large" />
+
+        <ImageView style="@style/IndicateRightStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_pay_way_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_line"
+        android:background="@color/color_white"
+        android:focusable="true"
+        android:padding="@dimen/dimen_twelve">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/iv_activity_pay_way_wx"
+            android:layout_width="@dimen/dimen_forty"
+            android:layout_height="@dimen/dimen_forty"
+            android:src="@drawable/icon_pay_way_wx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_sixteen"
+            android:layout_toRightOf="@id/iv_activity_pay_way_wx"
+            android:text="@string/pay_way_wx_pay"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large" />
+
+        <ImageView style="@style/IndicateRightStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_pay_way_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_line"
+        android:background="@color/color_white"
+        android:padding="@dimen/dimen_twelve">
+
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/iv_activity_pay_way_alipay"
+            android:layout_width="@dimen/dimen_forty"
+            android:layout_height="@dimen/dimen_forty"
+            android:src="@drawable/icon_pay_way_alipay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_sixteen"
+            android:layout_toRightOf="@id/iv_activity_pay_way_alipay"
+            android:text="@string/pay_way_alipay_pay"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_large" />
+
+        <ImageView style="@style/IndicateRightStyle" />
+    </RelativeLayout>
+</LinearLayout>

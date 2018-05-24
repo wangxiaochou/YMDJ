@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircularImageView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:orientation="vertical">
+        <!--头部-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_hundred_fifty_six"
+            android:background="@color/color_theme"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_sixty_six"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.ypshengxian.daojia.view.CircularImageView
+                    android:id="@+id/iv_fragment_mine_user_img"
+                    android:layout_width="@dimen/dimen_sixty_six"
+                    android:layout_height="@dimen/dimen_sixty_six"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_sixteen"
+                    android:src="@drawable/icon_user_default"
+                    CircularImageView:civBorder="1dp"
+                    CircularImageView:civBorderColor="@color/color_white"
+                    CircularImageView:civRoundRadius="40dp"
+                    CircularImageView:civShape="circle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font_normal"
+                        tools:text="亚比" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_user_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/font_small"
+                        tools:text="账号:34234234234" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_notify"
+                android:layout_width="@dimen/dimen_thirty"
+                android:layout_height="@dimen/dimen_thirty"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_sixteen"
+                android:layout_marginTop="@dimen/dimen_sixteen"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="0dp"
+                android:drawableTop="@drawable/icon_notify"
+                android:gravity="center"
+                android:textColor="@color/main_selector_text_color"
+                android:textSize="@dimen/font_tiny" />
+
+        </RelativeLayout>
+
+        <!--money-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_fragment_mine_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/preference_money"
+                    android:textSize="@dimen/font_huge"
+                    android:text="@string/mine_point" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_eight"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_sixteen"
+                        android:layout_height="@dimen/dimen_sixteen"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_integral" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_four"
+                        android:text="积分"
+                        android:textColor="@color/preference_name"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/dimen_line"
+                android:layout_height="match_parent"
+                android:background="@color/color_background" />
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_fragment_mine_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/preference_money"
+                    android:textSize="@dimen/font_huge"
+                    android:text="@string/mine_money_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_eight"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_sixteen"
+                        android:layout_height="@dimen/dimen_sixteen"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_four"
+                        android:text="账户余额"
+                        android:textColor="@color/preference_name"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--我的订单-->
+        <LinearLayout
+            android:id="@+id/ll_fragment_mine_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_eight"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的订单"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="全部订单"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+        <!--用户未完成信息-->
+        <RadioGroup
+            android:id="@+id/rg_fragment_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_line"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_0"
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/dimen_ten"
+                android:drawableTop="@drawable/icon_payment"
+                android:gravity="center"
+                android:text="@string/mine_tab_one_text"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_normal" />
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_1"
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/dimen_ten"
+                android:drawableTop="@drawable/icon_pick"
+                android:gravity="center"
+                android:text="@string/mine_tab_two_text"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_normal" />
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_2"
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/dimen_ten"
+                android:drawableTop="@drawable/icon_receiving"
+                android:gravity="center"
+                android:text="@string/mine_tab_three_text"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_normal" />
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_3"
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/dimen_ten"
+                android:drawableTop="@drawable/icon_complete"
+                android:gravity="center"
+                android:text="@string/mine_tab_four_text"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_normal" />
+
+            <com.ypshengxian.daojia.view.BadgeRadioButton
+                android:id="@+id/rb_fragment_mine_4"
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/dimen_ten"
+                android:drawableTop="@drawable/icon_alfter"
+                android:gravity="center"
+                android:text="@string/mine_tab_five_text"
+                android:textColor="@color/preference_price"
+                android:textSize="@dimen/font_normal" />
+        </RadioGroup>
+
+        <!--地址管理-->
+        <LinearLayout
+            android:id="@+id/ll_fragment_mine_site_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_eight"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty_two"
+                android:layout_height="@dimen/dimen_twenty_two"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_site" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_eight"
+                android:text="地址管理"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+        <!--我的优惠卷-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_line"
+            android:id="@+id/ll_fragment_mine_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty_two"
+                android:layout_height="@dimen/dimen_twenty_two"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_sale" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_eight"
+                android:text="我的优惠卷"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+        <!--个人资料-->
+        <LinearLayout
+            android:id="@+id/ll_fragment_mine_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_eight"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty_two"
+                android:layout_height="@dimen/dimen_twenty_two"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_eight"
+                android:text="个人资料"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+        <!--设置-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_line"
+            android:id="@+id/ll_fragment_mine_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_sixteen">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty_two"
+                android:layout_height="@dimen/dimen_twenty_two"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_eight"
+                android:text="设置"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_go" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

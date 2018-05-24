@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <include layout="@layout/simple_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_fragment_category_left"
+            android:layout_width="@dimen/dimen_eighty"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/dimen_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:padding="@dimen/dimen_sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fragment_category_random_sort"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="综合排序"
+                    android:textColor="@color/color_theme"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_category_sale_sort"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="销量排序"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_small" />
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_category_price_sort"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                   >
+                    <TextView
+                        android:id="@+id/tv_fragment_category_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格排序"
+                        android:textColor="@color/top_bar_title_color"
+                        android:textSize="@dimen/font_small" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_four"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:contentDescription="@null"
+                            android:layout_width="@dimen/dimen_six"
+                            android:layout_height="@dimen/dimen_six"
+                            android:src="@drawable/icon_class_order_unup" />
+                        <ImageView
+                            android:contentDescription="@null"
+                            android:layout_width="@dimen/dimen_six"
+                            android:layout_height="@dimen/dimen_six"
+                            android:src="@drawable/icon_class_order_undown" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_line"
+                android:background="@color/color_category_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/dimen_sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_fragment_category_top"
+                android:layout_marginBottom="@dimen/dimen_twelve"/>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/sr_fragment_category_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/dimen_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_fragment_category_count"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

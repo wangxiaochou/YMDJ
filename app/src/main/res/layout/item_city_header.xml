@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_forty"
+        android:text="定位城市"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_sixteen"
+        android:textSize="@dimen/font_huge"
+        android:textColor="@color/color_black"
+        />
+    <TextView
+        android:id="@+id/item_header_city_dw"
+        android:layout_width="@dimen/dimen_eighty"
+        android:layout_height="@dimen/dimen_thirty_six"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_sixteen"
+        android:background="@drawable/sylayout_shop"
+        android:text="东莞"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_line"
+        android:background="@color/gray2"
+        android:layout_margin="@dimen/dimen_sixteen"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/color_black"
+            android:text="热门城市"/>
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/item_header_city_gridview"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/color_black"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="所有城市"/>
+</LinearLayout>

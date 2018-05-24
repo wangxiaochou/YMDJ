@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_ten">
+        <RelativeLayout
+            android:id="@+id/rl_item_fragment_cart_select_layout"
+            android:visibility="visible"
+            android:padding="@dimen/dimen_four"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <CheckBox
+                android:clickable="false"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/selector_check_box_style"
+                android:id="@+id/cb_item_fragment_cart_select"
+                android:layout_width="@dimen/dimen_twenty"
+                android:layout_height="@dimen/dimen_twenty"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="@dimen/dimen_eight"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/dimen_hundred"
+            android:layout_height="@dimen/dimen_hundred"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_img_line"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardCornerRadius="@dimen/dimen_eight"
+            card_view:cardElevation="@dimen/dimen_two"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_item_fragment_cart_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    tools:src="@mipmap/ic_launcher" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_eight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_fragment_cart_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/preference_name"
+                android:textSize="@dimen/font_large"
+                tools:text="3dasfasfffsaffffffffffffffffffffffffrwerwe3" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_item_fragment_cart_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/preference_red"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="15.00元/斤" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_item_fragment_cart_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="这和31.3423/斤"
+                    android:textColor="@color/preference_name"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.ypshengxian.daojia.view.MyCountView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/mv_item_fragment_cart_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                   android:layout_marginRight="@dimen/dimen_four"
+                    android:id="@+id/iv_item_fragment_cart_delete"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/dimen_sixteen"
+                    android:layout_height="@dimen/dimen_sixteen"
+                    android:layout_gravity="right|center"
+                    android:background="@drawable/icon_delete"
+                    android:contentDescription="@null"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

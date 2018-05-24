@@ -1,0 +1,258 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newlens'
+
+android {
+    // 编译工具配置
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        // ndk平台选项
+        ndk {
+            abiFilters = []
+            abiFilters.addAll(rootProject.ext.abiFilters.split(';').collect { it as String })
+        }
+        // 打包资源种类配置
+        resConfigs "zh-rCN", "zh-rHK", "zh-rTW", "en"
+
+        // 单元测试
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    // 签名配置
+    signingConfigs {
+        debug {
+            loadSigningConfigs('debug', '../keystore/signing.debug.properties')
+        }
+        release {
+            loadSigningConfigs('release', '../keystore/signing.release.properties')
+        }
+    }
+
+    buildTypes {
+        release {
+            manifestPlaceholders = [
+                    // 应用图标
+                    appIcon    : "icon_app",
+                    // CRC防纂改
+                    dexCrc     : "7567165836",
+
+            ]
+            //appKey
+            buildConfigField "String", "appKey", "\"24828537\""
+            //地址拆分
+            buildConfigField "String", "api", "\"http://api.ypsheng\""
+            //appId
+            buildConfigField "String", "appId", "\"eaf92770b7a95cbcd1d70\""
+            //听云
+            buildConfigField "String", "apm", "\"0cfc2531d8aa4aaa\""
+
+
+            //Zipalign优化
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            multiDexEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            manifestPlaceholders = [
+                    // 应用图标
+                    appIcon    : "icon_app",
+                    // CRC防纂改(debug不作校验)
+                    dexCrc     : "0123456789",
+            ]
+            //appKey
+            buildConfigField "String", "appKey", "\"24828537\""
+            //服务器路径
+            buildConfigField "String", "api", "\"http://api.ypsheng\""
+            //appId
+            buildConfigField "String", "appId", "\"eaf92770b7a95cbcd1d70\""
+            //听云
+            buildConfigField "String", "apm", "\"0cfc2531d8aa4aaa\""
+            minifyEnabled false
+            shrinkResources false
+            multiDexEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            testProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguardTest-rules.pro'
+        }
+    }
+
+    //设置默认编码
+    compileOptions {
+        encoding "UTF-8"
+    }
+
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    repositories {
+
+        mavenCentral()
+
+    }
+}
+
+// 加载签名配置
+def loadSigningConfigs(type, path) {
+    def Properties props = new Properties()
+    def propFile = file(path)
+
+    if (propFile.canRead()) {
+        props.load(new FileInputStream(propFile))
+        if (props != null && props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+            android.signingConfigs."$type".storeFile = file(props['STORE_FILE'])
+            android.signingConfigs."$type".storePassword = props['STORE_PASSWORD']
+            android.signingConfigs."$type".keyAlias = props['KEY_ALIAS']
+            android.signingConfigs."$type".keyPassword = props['KEY_PASSWORD']
+        } else {
+            android.buildTypes."$type".signingConfig = null
+        }
+    } else {
+        android.buildTypes."$type".signingConfig = null
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.1.0'
+    testImplementation 'junit:junit:4.12'
+
+    // design library
+    implementation 'com.android.support:design:27.1.0'
+
+    // recycler view
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+
+    // card view
+    implementation 'com.android.support:cardview-v7:27.1.0'
+
+    // 网络请求(retrofit)
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    // rx android
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    // rx lifecycle
+    implementation 'com.trello:rxlifecycle:1.0'
+    implementation 'com.trello:rxlifecycle-components:1.0'
+
+    // rx permissions
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
+
+    // 文件下载(file downloader)
+    implementation 'com.liulishuo.filedownloader:library:1.4.1'
+
+    // event bus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    // 图片加载(glide)
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'jp.wasabeef:glide-transformations:3.0.1'
+
+    // 沉浸式状态栏(status bar util)
+    implementation 'com.jaeger.statusbaruitl:library:1.3.5'
+
+    // 导航栏(FlycoTabLayout)
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    // material风格的RatingBar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.0.2'
+
+    // material风格的ProgressBar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.3.0'
+
+    // 代码家的滑动控件
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+
+    // 滚轮选择器(WheelPicker)
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+
+    // 高亮提示
+    implementation 'com.isanwenyu.highlight:highlight:1.5.1'
+
+    // 多样式布局(vlayout)
+    implementation('com.alibaba.android:vlayout:1.0.9@aar') {
+        transitive = true
+    }
+
+    // 方法数超65535
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //通用适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31'
+
+    //下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+
+    //    // 鲁班--图片压缩
+    implementation 'top.zibin:Luban:1.1.3'
+
+    //    // 二维码识别
+
+    //    implementation 'com.google.zxing:core:3.2.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //倒计时
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+
+    //腾讯地图
+    implementation 'com.tencent.map:tencent-map-vector-sdk:4.0.8.1'
+    implementation files('libs/TencentLocationSdk_v6.2.5.3_r15b3b3cc_20171103_115903.jar')
+
+    //密码输入框
+    implementation 'com.jungly:gridPasswordView:0.3'
+
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4'
+
+    //选择图片
+    implementation 'com.yanzhenjie:album:2.0.2'
+
+    //仿iOS选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.0'
+
+    //城市列表
+    implementation 'me.yokeyword:indexablerecyclerview:1.3.0'
+    
+
+    //阿里支付和验证
+    implementation files('libs/alipaySdk-20180316.jar')
+
+    implementation "com.networkbench.newlens.agent.android:nbs.newlens.agent:2.8.3"
+
+}

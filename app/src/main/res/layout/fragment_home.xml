@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+    <include layout="@layout/simple_title_bar"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sr_fragment_refresh">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_fragment_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:fabSize="mini"
+        android:id="@+id/fab_fragment_home_go_top"
+        android:clickable="true"
+        android:src="@drawable/icon_go_top"
+        app:elevation="@dimen/dimen_line"
+        android:visibility="gone"
+        app:borderWidth="@dimen/dimen_zero"
+        app:layout_anchorGravity="bottom|right"
+        app:backgroundTint="@color/color_fab_background"
+        app:rippleColor="@color/color_theme"
+        android:layout_margin="@dimen/dimen_sixteen"/>
+</FrameLayout>

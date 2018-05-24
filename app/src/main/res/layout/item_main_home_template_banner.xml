@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.ypshengxian.daojia.view.banner.Banner
+        android:id="@+id/banner_template_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_hundred_fifty"/>
+
+    <ImageView
+        android:id="@+id/iv_template_banner_bottom_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_ten"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_transparent"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.PurseSafetyActivity">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_purse_safety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="修改支付密码"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_large" />
+
+        <ImageView style="@style/IndicateRightStyle" />
+    </RelativeLayout>
+</LinearLayout>

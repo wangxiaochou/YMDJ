@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/shape_white_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_receive_coupons_price"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/icon_coupon_item_bg">
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_receive_coupons_price"
+            android:layout_toLeftOf="@+id/tv_item_receive_coupons_price"
+            android:text="¥"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_large"/>
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_max"
+            tools:text="15"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/rl_item_receive_coupons_price"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_range_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/main_color_selected_text"
+            android:textSize="@dimen/font_normal"
+            android:visibility="invisible"
+            tools:text="仅小白菜可使用"/>
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_range_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_item_receive_coupons_range_goods"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/top_bar_title_color"
+            android:textSize="@dimen/font_normal"
+            tools:text="单笔满100元生效"/>
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_range_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_receive_coupons_range_goods"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/main_color_selected_text"
+            android:textSize="@dimen/font_normal"
+            tools:text="2018.12.08至12.09"/>
+
+        <TextView
+            android:id="@+id/tv_item_receive_coupons_receive"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/tv_item_receive_coupons_range_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_theme_color_rectangle_stoke_bg"
+            android:gravity="center"
+            android:text="立即领取"
+            android:textColor="@color/color_theme"
+            android:textSize="@dimen/font_normal"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_item_receive_coupons_state"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_coupons_used"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/cb_item_receive_coupons_selected"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/select_coupon_checked_bg"
+            android:button="@null"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

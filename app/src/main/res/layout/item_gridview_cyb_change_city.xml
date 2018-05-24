@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_forty">
+<TextView
+    android:id="@+id/item_gridview_cyb_change_city_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_forty"
+    android:background="@drawable/sylayout_shop"
+    android:gravity="center"
+    android:paddingTop="@dimen/dimen_two"
+    android:paddingBottom="@dimen/dimen_two"
+    android:textSize="@dimen/font_normal"
+    android:textColor="@color/preference_name"
+    android:layout_marginTop="@dimen/dimen_six"
+    tools:text="广州"/>
+</RelativeLayout>

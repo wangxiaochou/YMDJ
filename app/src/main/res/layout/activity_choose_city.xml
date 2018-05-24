@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar"/>
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/il_activity_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:indexBar_selectedTextColor="@color/color_black"
+        app:indexBar_textColor="@color/color_theme"
+        app:indexBar_layout_width="40dp"
+        app:indexBar_textSize="14sp"
+        app:indexBar_textSpace="5dp" />
+
+
+</LinearLayout>

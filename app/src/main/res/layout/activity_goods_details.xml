@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.GoodsDetailsActivity">
+
+    <include layout="@layout/simple_title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sl_activity_goods_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/rl_activity_goods_details_vp"
+                    layout="@layout/layout_goods_details_viewpager"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/color_goods_details_text_bg"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_large"
+                    tools:text="原产进口"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_activity_goods_details_goods_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_fifteen"
+                android:paddingLeft="@dimen/dimen_twelve"
+                android:paddingRight="@dimen/dimen_twelve"
+                android:paddingTop="@dimen/dimen_fifteen"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold"
+                tools:text="美欧房间大数据房间打开拉法基反倒是官方的说法大发"/>
+
+            <TextView
+                android:id="@+id/tv_activity_goods_details_goods_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_normal"
+                android:visibility="gone"
+                tools:text="美欧房间大数据房间打开拉法基"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_page_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_fourteen"
+                android:paddingLeft="@dimen/dimen_twelve"
+                android:paddingRight="@dimen/dimen_twelve"
+                android:paddingTop="@dimen/dimen_fourteen">
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_price_each"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_goods_details_price_text"
+                    android:textSize="@dimen/font_huge"
+                    android:textStyle="bold"
+                    tools:text="23.80"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_each"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_activity_goods_details_price_each"
+                    android:layout_toRightOf="@id/tv_activity_goods_details_price_each"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="元/份"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_price_catty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="折合65.20/斤"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_page_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_fifteen"
+                android:paddingLeft="@dimen/dimen_twelve"
+                android:paddingRight="@dimen/dimen_twelve"
+                android:paddingTop="@dimen/dimen_fifteen">
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_each_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/top_bar_title_color"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="每份：约150g"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_goods_details_integral_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/main_color_selected_text"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="购买可获得15积分"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_ten"
+                android:background="@color/color_page_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_fourteen"
+                android:paddingTop="@dimen/dimen_fourteen"
+                android:text="商品详情"
+                android:textColor="@color/top_bar_title_color"
+                android:textSize="@dimen/font_large"/>
+
+            <WebView
+                android:id="@+id/web_activity_goods_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_activity_goods_details_consume_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_activity_goods_details_join_car"
+        android:padding="10dp"
+        android:text="消耗积分：7200"
+        android:textColor="@color/main_color_selected_text"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_goods_details_join_car"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_fifty"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_page_line"/>
+
+        <ImageView
+            android:id="@+id/iv_activity_goods_details_reduce"
+            android:layout_width="@dimen/dimen_twenty_four"
+            android:layout_height="@dimen/dimen_twenty_four"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_fifteen"
+            android:src="@drawable/icon_goods_reduce"/>
+
+        <TextView
+            android:id="@+id/tv_activity_goods_details_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_ten"
+            android:layout_marginRight="@dimen/dimen_ten"
+            android:layout_toRightOf="@id/iv_activity_goods_details_reduce"
+            android:text="1"
+            android:textSize="@dimen/font_huge"/>
+
+        <ImageView
+            android:id="@+id/iv_activity_goods_details_add"
+            android:layout_width="@dimen/dimen_twenty_four"
+            android:layout_height="@dimen/dimen_twenty_four"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_activity_goods_details_num"
+            android:src="@drawable/icon_goods_add"/>
+
+        <TextView
+            android:id="@+id/tv_activity_goods_details_join_car"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_thirty"
+            android:paddingRight="@dimen/dimen_thirty"
+            android:text="加入购物车"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_large"/>
+    </RelativeLayout>
+</LinearLayout>

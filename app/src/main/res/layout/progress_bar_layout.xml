@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+       <ProgressBar
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dimen_sixteen"
+           android:progressDrawable="@drawable/progress_style"
+           android:id="@+id/pb_progress_bar"
+           android:indeterminateOnly="false"
+           style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+           />
+
+        <TextView
+            android:id="@+id/tv_progress_piece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_ten"
+            tools:text="已抢73件"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_tiny" />
+
+        <TextView
+            android:id="@+id/tv_progress_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_ten"
+            tools:text="30%"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_tiny" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

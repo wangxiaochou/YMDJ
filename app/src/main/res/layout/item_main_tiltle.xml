@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_white"
+    android:padding="@dimen/dimen_twelve"
+    android:id="@+id/rl_item_title_layout">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="@dimen/dimen_twelve"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_thirty"
+            android:layout_height="@dimen/dimen_line"
+            android:background="@color/preference_name"/>
+
+        <TextView
+            android:id="@+id/tv_item_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="新人专享"
+            android:textColor="@color/preference_name"
+            android:textSize="@dimen/font_large"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_twelve"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_thirty"
+            android:layout_height="@dimen/dimen_line"
+            android:background="@color/preference_name"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:layout_toLeftOf="@+id/iv_item_title_go"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/color_gray_login_hint_text"/>
+
+    <ImageView
+        android:id="@+id/iv_item_title_go"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dimen_twenty"
+        android:layout_height="@dimen/dimen_twenty"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_go"/>
+
+</RelativeLayout>

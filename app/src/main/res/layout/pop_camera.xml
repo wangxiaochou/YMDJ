@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    >
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_pop_camera_photo"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册选择照片"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:textSize="@dimen/font_large"
+        android:padding="@dimen/dimen_eight"/>
+    <Button
+       android:id="@+id/btn_pop_camera_cancel"
+        android:layout_marginTop="@dimen/dimen_eight"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:textSize="@dimen/font_large"
+        />
+
+</LinearLayout>

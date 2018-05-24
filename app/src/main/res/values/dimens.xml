@@ -1,0 +1,154 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toast_radius">3dp</dimen>
+
+    <!-- 通用字体大小定义 -->
+    <dimen name="font_max">30sp</dimen>
+    <dimen name="font_twenty_six">26sp</dimen>
+    <dimen name="font_huge">18sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+    <dimen name="font_minimum">8sp</dimen>
+
+    <!-- 通用外边距(margin) -->
+    <dimen name="margin_huge">40dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="margin_normal">20dp</dimen>
+    <dimen name="margin_small">15dp</dimen>
+    <dimen name="margin_min">12dp</dimen>
+    <dimen name="margin_tiny">10dp</dimen>
+    <dimen name="margin_minimum">7dp</dimen>
+
+    <!-- 通用内边距(padding) -->
+    <dimen name="padding_super">30dp</dimen>
+    <dimen name="padding_max">25dp</dimen>
+    <dimen name="padding_huge">20dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+
+    <!-- 简单标题栏参数 -->
+    <dimen name="simple_title_bar_default_height">48dp</dimen>
+    <dimen name="simple_title_bar_left_padding">12dp</dimen>
+    <dimen name="simple_title_bar_right_padding">12dp</dimen>
+    <dimen name="simple_title_bar_inner_padding">8dp</dimen>
+    <dimen name="simple_title_bar_drawable_padding">8dp</dimen>
+    <dimen name="simple_title_bar_shadow_height">0dp</dimen>
+
+    <!-- Loading对话框参数 -->
+    <dimen name="loading_dialog_icon_width">30dp</dimen>
+    <dimen name="loading_dialog_icon_height">30dp</dimen>
+    <dimen name="loading_dialog_msg_margin_top">10dp</dimen>
+    <dimen name="loading_dialog_width">120dp</dimen>
+    <dimen name="loading_dialog_height">120dp</dimen>
+
+    <!-- WebView加载进度条高度 -->
+    <dimen name="web_view_loading_progress_height">3dp</dimen>
+    <dimen name="web_view_left_toolbar_btn_width">16dp</dimen>
+    <dimen name="web_view_left_toolbar_btn_padding">8dp</dimen>
+    <dimen name="web_view_left_toolbar_btn_padding_small">3dp</dimen>
+
+    <!-- MenuPopupWindow -->
+    <dimen name="menu_popup_window_icon_width">25dp</dimen>
+    <dimen name="menu_popup_window_icon_height">25dp</dimen>
+    <dimen name="menu_popup_window_item_padding_left">10dp</dimen>
+    <dimen name="menu_popup_window_item_padding_top">10dp</dimen>
+    <dimen name="menu_popup_window_item_padding_right">40dp</dimen>
+    <dimen name="menu_popup_window_item_padding_bottom">10dp</dimen>
+    <dimen name="menu_popup_window_margin_icon_text">10dp</dimen>
+    <dimen name="menu_popup_window_headview_height">10dp</dimen>
+    <dimen name="menu_popup_window_divider">0.5dp</dimen>
+    <!-- 安全边距 -->
+    <dimen name="safe_margin">12dp</dimen>
+
+    <!-- 标题栏高度 -->
+    <dimen name="top_bar_height">48dp</dimen>
+    <dimen name="top_bar_shadow_height">1dp</dimen>
+
+    <!-- IosPopupDialog -->
+    <dimen name="ios_popup_dialog_width">236dp</dimen>
+    <dimen name="ios_popup_dialog_margin_title">15dp</dimen>
+    <dimen name="ios_popup_dialog_margin_division">10dp</dimen>
+    <dimen name="ios_popup_dialog_height_button">43dp</dimen>
+    <dimen name="ios_popup_dialog_padding_no_button">20dp</dimen>
+
+    <!-- 文本间距 -->
+    <dimen name="text_inner_margin">6dp</dimen>
+    <dimen name="text_drawable_margin">10dp</dimen>
+    <dimen name="share_image_size">50dp</dimen>
+    <!--通用dp-->
+    <dimen name="dimen_sixteen">16dp</dimen>
+    <dimen name="dimen_eight">8dp</dimen>
+    <dimen name="dimen_four">4dp</dimen>
+    <dimen name="dimen_zero">0dp</dimen>
+    <dimen name="dimen_line">0.5dp</dimen>
+    <dimen name="dimen_one">1dp</dimen>
+    <dimen name="dimen_two">2dp</dimen>
+    <dimen name="dimen_six">6dp</dimen>
+    <dimen name="dimen_ten">10dp</dimen>
+    <dimen name="dimen_twelve">12dp</dimen>
+    <dimen name="dimen_fourteen">14dp</dimen>
+    <dimen name="dimen_fifteen">15dp</dimen>
+    <dimen name="dimen_eighteen">18dp</dimen>
+    <dimen name="dimen_twenty">20dp</dimen>
+    <dimen name="dimen_twenty_two">22dp</dimen>
+    <dimen name="dimen_twenty_four">24dp</dimen>
+    <dimen name="dimen_twenty_six">26dp</dimen>
+    <dimen name="dimen_twenty_eight">28dp</dimen>
+    <dimen name="dimen_thirty">30dp</dimen>
+    <dimen name="dimen_thirty_two">32dp</dimen>
+    <dimen name="dimen_thirty_four">34dp</dimen>
+    <dimen name="dimen_thirty_six">36dp</dimen>
+    <dimen name="dimen_thirty_eight">38dp</dimen>
+    <dimen name="dimen_forty">40dp</dimen>
+    <dimen name="dimen_forty_two">42dp</dimen>
+    <dimen name="dimen_forty_four">44dp</dimen>
+    <dimen name="dimen_forty_six">46dp</dimen>
+    <dimen name="dimen_forty_eight">48dp</dimen>
+    <dimen name="dimen_fifty">50dp</dimen>
+    <dimen name="dimen_fifty_two">52dp</dimen>
+    <dimen name="dimen_fifty_four">54dp</dimen>
+    <dimen name="dimen_fifty_six">56dp</dimen>
+    <dimen name="dimen_fifty_eight">58dp</dimen>
+    <dimen name="dimen_sixty">60dp</dimen>
+    <dimen name="dimen_sixty_two">62dp</dimen>
+    <dimen name="dimen_sixty_four">64dp</dimen>
+    <dimen name="dimen_sixty_six">66dp</dimen>
+    <dimen name="dimen_sixty_eight">68dp</dimen>
+    <dimen name="dimen_seventy">70dp</dimen>
+    <dimen name="dimen_seventy_two">72dp</dimen>
+    <dimen name="dimen_seventy_four">74dp</dimen>
+    <dimen name="dimen_seventy_six">76dp</dimen>
+    <dimen name="dimen_seventy_eight">78dp</dimen>
+    <dimen name="dimen_eighty">80dp</dimen>
+    <dimen name="dimen_eighty_two">82dp</dimen>
+    <dimen name="dimen_eighty_four">84dp</dimen>
+    <dimen name="dimen_eighty_six">86dp</dimen>
+    <dimen name="dimen_eighty_eight">88dp</dimen>
+    <dimen name="dimen_ninety">90dp</dimen>
+    <dimen name="dimen_ninety_two">92dp</dimen>
+    <dimen name="dimen_ninety_four">94dp</dimen>
+    <dimen name="dimen_ninety_six">96dp</dimen>
+    <dimen name="dimen_ninety_eight">98dp</dimen>
+    <dimen name="dimen_hundred">100dp</dimen>
+    <dimen name="dimen_hundred_ten">110dp</dimen>
+    <dimen name="dimen_hundred_eighty_eight">188dp</dimen>
+    <dimen name="dimen_hundred_fifty">150dp</dimen>
+    <dimen name="dimen_hundred_forty">140dp</dimen>
+    <dimen name="dimen_hundred_thirty">130dp</dimen>
+    <dimen name="dimen_hundred_fifty_six">156dp</dimen>
+    <dimen name="dimen_hundred_seventy_six">176dp</dimen>
+    <dimen name="dimen_hundred_sixty">160dp</dimen>
+    <dimen name="dimen_two_hundred_sixty">260dp</dimen>
+    <dimen name="dimen_two_hundred_eighty">272dp</dimen>
+    <dimen name="dimen_four_hundred">400dp</dimen>
+
+
+
+    <!--banner-->
+    <dimen name="main_home_template_banner_indicator_margin_bottom">10dp</dimen>
+</resources>

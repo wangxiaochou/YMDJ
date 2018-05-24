@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="@dimen/dimen_hundred"
+       android:layout_gravity="center"
+        android:id="@+id/iv_layout_empty_img"
+        android:contentDescription="@null"
+        android:layout_width="@dimen/dimen_seventy"
+        android:layout_height="@dimen/dimen_seventy"
+        android:src="@drawable/icon_no_msg"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textColor="@color/preference_price"
+        android:layout_marginTop="@dimen/dimen_sixteen"
+        android:id="@+id/tv_layout_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_no"
+        android:textSize="@dimen/font_normal"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_layout_empty_go_home"
+        android:layout_marginTop="@dimen/dimen_sixteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_zero"
+        android:layout_gravity="center"
+        android:text="去首页"
+        android:textSize="@dimen/font_normal"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/color_white"
+        android:background="@drawable/shape_empty_btn_style"
+        />
+
+
+</LinearLayout>

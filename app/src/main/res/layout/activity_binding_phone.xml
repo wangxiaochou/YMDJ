@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.BindingPhoneActivity">
+
+    <include layout="@layout/simple_title_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="为了您的账户安全，请绑定手机"
+        android:textColor="@color/color_gray_login_hint_text"
+        android:textSize="@dimen/font_normal"/>
+
+    <com.ypshengxian.daojia.view.ExtendEditText
+        android:id="@+id/tv_activity_binding_phone_phone"
+        style="@style/Login_Phone"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.ypshengxian.daojia.view.ExtendEditText
+            android:id="@+id/tv_activity_binding_phone_code"
+            style="@style/Register_Code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_activity_binding_phone_get_code"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_theme_color_bg"
+            android:gravity="center"
+            android:text="@string/register_get_code_text"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_normal"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_binding_phone_confirm"
+        style="@style/BtnThemeColorSolidBackground"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="84dp"
+        android:text="完成"/>
+</LinearLayout>

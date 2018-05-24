@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar" />
+
+
+    <ImageView
+        android:id="@+id/iv_activity_store_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/img_shop_success" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_store_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/iv_activity_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_store" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/iv_activity_store"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_activity_store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_large"
+                    tools:text="大学城店" />
+
+                <TextView
+                    android:id="@+id/tv_activity_store_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="@string/store_details_time" />
+
+                <TextView
+                    android:id="@+id/tv_activity_store_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="距离你约1.1千米" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/icon_go"
+                android:gravity="center"
+                android:text="@string/store_details_map"
+                android:textColor="@color/album_FontDark"
+                android:textSize="@dimen/font_large" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@color/color_background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_store_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/iv_activity_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/tv_activity_store_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/iv_activity_location"
+                android:layout_toStartOf="@+id/tv_activity_store_navigation_go"
+                android:textColor="@color/album_FontDark"
+                android:textSize="@dimen/font_large"
+                tools:text="重庆市沙坪坝区大学城南路28号重庆市沙坪坝区大学城南路28号" />
+
+            <TextView
+                android:id="@+id/tv_activity_store_navigation_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/icon_go"
+                android:gravity="center"
+                android:text="@string/store_details_navigation"
+                android:textColor="@color/album_FontDark"
+                android:textSize="@dimen/font_large" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@color/color_background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_activity_store_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/iv_activity_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_phone_green" />
+
+            <TextView
+                android:id="@+id/tv_activity_store_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_toEndOf="@id/iv_activity_phone"
+                android:layout_toStartOf="@+id/tv_activity_store_contact_go"
+                android:textColor="@color/album_FontDark"
+                android:textSize="@dimen/font_large"
+                tools:text="@string/setting_call_phone" />
+
+            <TextView
+                android:id="@+id/tv_activity_store_contact_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/icon_go"
+                android:gravity="center"
+                android:text="@string/store_details_contact"
+                android:textColor="@color/album_FontDark"
+                android:textSize="@dimen/font_large" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_line"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@color/color_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/icon_sweet_alert" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store_details_sweet_alert"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:text="@string/store_details_tips"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

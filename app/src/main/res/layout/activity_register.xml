@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical"
+    tools:context="com.ypshengxian.daojia.ui.activity.RegisterActivity">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <com.ypshengxian.daojia.view.ExtendEditText
+        android:id="@+id/tv_activity_register_phone"
+        style="@style/Login_Phone"
+        android:layout_marginTop="20dp"
+        android:digits="0123456789"
+        android:drawablePadding="5dp"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <com.ypshengxian.daojia.view.ExtendEditText
+        android:id="@+id/tv_activity_register_pw"
+        style="@style/Login_Password"
+        android:drawablePadding="5dp"
+        android:hint="@string/login_hint_pw_text"
+        android:inputType="textPassword" />
+
+    <com.ypshengxian.daojia.view.ExtendEditText
+        android:id="@+id/tv_activity_register_confirm_pw"
+        style="@style/Login_Password"
+        android:drawablePadding="5dp"
+        android:hint="@string/register_hint_confirm_pw_text"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.ypshengxian.daojia.view.ExtendEditText
+            android:id="@+id/tv_activity_register_code"
+            style="@style/Register_Code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:digits="0123456789"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:id="@+id/tv_activity_register_get_code"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_theme_color_bg"
+            android:gravity="center"
+            android:text="@string/register_get_code_text"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_register_confirm"
+        style="@style/BtnThemeColorSolidBackground"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/register_hint_confirm_text" />
+</LinearLayout>

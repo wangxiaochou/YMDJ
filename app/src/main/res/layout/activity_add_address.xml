@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/simple_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_activity_add_address_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_theme"
+            android:gravity="center"
+            android:paddingBottom="@dimen/album_dp_15"
+            android:paddingTop="@dimen/album_dp_15"
+            android:text="@string/add_address_save"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_huge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_activity_add_address_save"
+            android:background="@color/color_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_activity_add_address_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_pink_fc757c"
+                android:paddingBottom="@dimen/dimen_eight"
+                android:paddingTop="@dimen/dimen_eight">
+
+                <ImageView
+                    android:id="@+id/iv_activity_add_address_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:layout_marginRight="@dimen/margin_tiny"
+                    android:src="@drawable/icon_address_alert" />
+
+                <ImageView
+                    android:id="@+id/iv_activity_add_address_notice_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:layout_marginRight="@dimen/margin_tiny"
+                    android:src="@drawable/icon_address_close" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_activity_add_address_notice_close"
+                    android:layout_toRightOf="@+id/iv_activity_add_address_notice"
+                    android:text="@string/add_address_tips"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_small" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_receiver"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_activity_add_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/add_address_name_input"
+                    android:padding="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_line"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_phone"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_activity_add_address_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/add_address_phone_input"
+                    android:padding="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_line"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_address"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_activity_add_address_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal"
+                    tools:hint="重庆市" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_line"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_store"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tv_activity_add_address_choose_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/album_dp_2"
+                    android:drawableRight="@drawable/icon_indicate_right"
+                    android:gravity="right|center_vertical"
+                    android:paddingBottom="@dimen/dimen_twelve"
+                    android:paddingLeft="@dimen/dimen_twelve"
+                    android:paddingRight="@dimen/padding_small"
+                    android:paddingTop="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="大学城店" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_line"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_housing_choose"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tv_activity_add_address_choose_housing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/album_dp_2"
+                    android:drawableRight="@drawable/icon_indicate_right"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/add_address_choose"
+                    android:paddingBottom="@dimen/dimen_twelve"
+                    android:paddingLeft="@dimen/dimen_twelve"
+                    android:paddingRight="@dimen/padding_small"
+                    android:paddingTop="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_line"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="@string/add_address_address_detail"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_activity_add_address_address_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/add_address_example"
+                    android:padding="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

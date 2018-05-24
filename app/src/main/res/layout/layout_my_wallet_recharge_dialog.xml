@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_gray_top_conner_bg"
+            android:drawableLeft="@drawable/icon_pay_way_wx"
+            android:drawablePadding="@dimen/padding_large"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_huge"
+            android:text="微信充值"
+            android:textColor="@color/album_FontDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_white_bottom_conner_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_twelve"
+                    android:text="充值金额"
+                    android:textColor="@color/album_FontDark"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_dialog_my_wallet_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_gray_rectangle_stoke_no_conner_bg"
+                    android:hint="请输入充值金额"
+                    android:padding="@dimen/dimen_twelve"
+                    android:textColor="@color/album_FontDark"
+                    android:textColorHint="@color/album_FontHint"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/et_dialog_my_wallet_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_large"
+                android:background="@drawable/shape_theme_color_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/album_dp_15"
+                android:paddingTop="@dimen/album_dp_15"
+                android:text="确定"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

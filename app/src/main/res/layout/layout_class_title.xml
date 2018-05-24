@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_forty_six"
+    android:background="@color/color_theme"
+    android:paddingLeft="@dimen/dimen_twelve"
+    android:paddingRight="@dimen/dimen_twelve">
+
+    <TextView
+        android:id="@+id/tv_layout_class_title_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="取消"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_large"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_thirty"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_twelve"
+        android:layout_toLeftOf="@+id/tv_layout_class_title_cancel"
+        android:background="@drawable/shape_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_twelve"
+        android:paddingRight="@dimen/dimen_twelve"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_sixteen"
+            android:layout_height="@dimen/dimen_sixteen"
+            android:src="@drawable/icon_class_title_search"/>
+
+        <com.ypshengxian.daojia.view.ExtendEditText
+            android:id="@+id/eet_layout_class_title_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_ten"
+            android:background="@null"
+            android:hint="输入搜索关键字"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/top_bar_title_color"
+            android:textColorHint="@color/color_gray_login_hint_text"
+            android:textSize="@dimen/font_small"/>
+    </LinearLayout>
+</RelativeLayout>

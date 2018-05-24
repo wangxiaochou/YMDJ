@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_item_system_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/top_bar_title_color"
+        android:textSize="@dimen/font_large"
+        tools:text="商品配送提醒"/>
+
+    <TextView
+        android:id="@+id/tv_item_system_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_gray_login_hint_text"
+        android:textSize="@dimen/font_normal"
+        tools:text="2018/08/23  03:25"/>
+
+    <TextView
+        android:id="@+id/tv_item_system_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_system_message_title"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/top_bar_title_color"
+        android:textSize="@dimen/font_large"
+        tools:text="商品配送提商品配送提醒商品配送提醒商品配送提醒商品配送提醒商品配送提醒商品配送提醒商品配送提醒醒"/>
+
+    <TextView
+        android:id="@+id/tv_item_system_message_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_system_message_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_gray_login_hint_text"
+        android:textSize="@dimen/font_normal"
+        tools:text="查看订单详情"/>
+</RelativeLayout>

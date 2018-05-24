@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.8.3'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // 编译sdk版本
+    compileSdkVersion = 27
+    // 工具版本
+    buildToolsVersion = "26.0.2"
+    // 最小支持API版本
+    minSdkVersion = 17
+    // 目标API版本
+    targetSdkVersion = 27
+
+    // 应用id
+    applicationId = "com.ypshengxian.daojia"
+    // 版本号
+    versionCode = 1
+    // 版本名
+    versionName = "V1.0.0"
+    // 平台参数(分号分割，不能有空格：armeabi-v7a;x86;arm64-v8a)
+    abiFilters = "armeabi-v7a;x86;"
+}

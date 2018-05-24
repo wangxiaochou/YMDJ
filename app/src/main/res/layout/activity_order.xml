@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_background">
+    <include layout="@layout/simple_title_bar"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_activity_order_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_gravity="center"
+        android:background="@color/color_white"
+        android:visibility="visible"
+        app:tabSelectedTextColor="@color/preference_count"
+        app:tabTextColor="@color/preference_price"
+        app:tabIndicatorColor="@color/preference_count"
+        app:tabBackground="@color/color_white"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sr_activity_order_refresh">
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dimen_twelve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_activity_order_count"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

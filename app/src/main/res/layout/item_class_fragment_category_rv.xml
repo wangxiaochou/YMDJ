@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:id="@+id/ll_item_class_fragment_category_layout"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_item_class_fragment_category_color"
+        android:layout_width="@dimen/dimen_two"
+        android:layout_height="match_parent"
+        android:background="@color/color_theme"/>
+    <TextView
+        android:paddingBottom="@dimen/dimen_sixteen"
+        android:paddingTop="@dimen/dimen_sixteen"
+        android:id="@+id/tv_item_class_fragment_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="精品水果"
+        android:textColor="@color/preference_name"
+        android:textSize="@dimen/font_small"/>
+</LinearLayout>

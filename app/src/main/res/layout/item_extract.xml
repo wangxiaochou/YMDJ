@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_four_hundred"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_code_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_item_extract_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_forty"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_twelve"
+                android:src="@drawable/icon_time" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提货时间"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/tv_item_extract_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_four"
+                    tools:text="2017.12.23 15:30-16:20"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_item_extract_img"
+            android:layout_width="@dimen/dimen_hundred_thirty"
+            android:layout_height="@dimen/dimen_hundred_thirty"
+            android:layout_below="@+id/ll_item_extract_time_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_twelve"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_app" />
+
+        <TextView
+            android:id="@+id/tv_item_extract_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_two_hundred_eighty"
+            android:text="提货码"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_huge" />
+
+        <TextView
+            android:id="@+id/tv_item_extract_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_extract_number_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_six"
+            tools:text="5633 5878"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_twenty_six" />
+        <TextView
+            android:id="@+id/tv_item_extract_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_extract_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_six"
+            tools:text="5633 5878"
+            android:textColor="@color/preference_price"
+            android:textSize="@dimen/font_small" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

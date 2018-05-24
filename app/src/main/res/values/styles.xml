@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="colorPrimaryDark">@color/color_theme</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySlide</item>
+    </style>
+
+
+    <!-- 页面转场侧滑效果 -->
+    <style name="ActivitySlide" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_slide_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_slide_out_to_right</item>
+    </style>
+
+    <!-- App主题启动样式 -->
+    <style name="AppTheme.Launcher" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style><!-- 水平分隔线 -->
+
+    <!-- 水平分隔线 -->
+    <style name="DividerHorizontal">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_background</item>
+    </style>
+
+
+    <!--iosPop-->
+    <!-- 全屏对话框 -->
+    <style name="FullScreenDialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 全屏对话框(背景透明) -->
+    <style name="FullScreenDialogTrans" parent="FullScreenDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <!-- 标题 -->
+    <style name="IosPopuppDialogTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:layout_marginRight">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:layout_marginTop">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 底部按钮 -->
+    <style name="IosPopupDialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ios_popup_dialog_height_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ios_popup_dialog_blue</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <!--yp底部按钮 -->
+    <style name="YpPopupDialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ios_popup_dialog_height_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+    <!-- 样式 -->
+    <style name="IosPopupDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Toast 显示动画 -->
+    <style name="ToastCompat"/>
+
+    <style name="ToastCompat.Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <!-- 输入框 登录/注册/绑定手机号里的手机号 -->
+    <style name="Login_Phone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:textColor">@color/top_bar_title_color</item>
+        <item name="android:textColorHint">@color/color_gray_login_hint_text</item>
+        <item name="android:background">@drawable/shape_white_bg</item>
+        <item name="android:drawableLeft">@drawable/icon_login_user_phone</item>
+        <item name="android:hint">@string/login_hint_phone_text</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <!-- 输入框 登录/注册/绑定手机号里的密码 -->
+    <style name="Login_Password">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/top_bar_title_color</item>
+        <item name="android:textColorHint">@color/color_gray_login_hint_text</item>
+        <item name="android:background">@drawable/shape_white_bg</item>
+        <item name="android:drawableLeft">@drawable/icon_login_pw</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="drawableCiphertext">@drawable/icon_login_eye_unvisible</item>
+        <item name="drawablePlaintext">@drawable/icon_login_eye_visible</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <!--输入框  注册/绑定手机号的验证码-->
+    <style name="Register_Code">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/shape_white_bg</item>
+        <item name="android:drawableLeft">@drawable/icon_reigister_code</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/top_bar_title_color</item>
+        <item name="android:textColorHint">@color/color_gray_login_hint_text</item>
+        <item name="android:hint">@string/register_hint_code_text</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <!--登录/注册(绑定手机号)/选择优惠券/支付成功/设置支付密码/设置/-->
+    <style name="BtnThemeColorSolidBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/shape_theme_color_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    <!--indicate(向右)  支付/设置/钱包安全/个人资料/-->
+    <style name="IndicateRightStyle">
+        <item name="android:layout_width">@dimen/dimen_eight</item>
+        <item name="android:layout_height">@dimen/dimen_twelve</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_indicate_right</item>
+    </style>
+    <!--我的优惠券 tablayout-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--pop进入方式-->
+    <style name="pop_shop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/animation_out</item>
+        <item name="android:windowExitAnimation">@anim/animation_enter</item>
+    </style>
+</resources>

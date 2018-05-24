@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_twelve"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/tv_item_search_history_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/top_bar_title_color"
+        android:textSize="@dimen/font_large"
+        tools:text="水果" />
+
+    <ImageView
+        style="@style/IndicateRightStyle"
+        android:contentDescription="@null" />
+</RelativeLayout>
